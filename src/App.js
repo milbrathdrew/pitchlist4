@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Home from './components/Home';
 
@@ -18,12 +18,6 @@ const App = () => {
             <Route path="/" element={<Navigate to="/home" />} />
           </Routes>
         </header>
-        <button>
-          <Link to="/login">Login</Link>
-        </button>
-        <button>
-          <Link to="/home">Home</Link>
-        </button>
       </div>
     </Router>
   );

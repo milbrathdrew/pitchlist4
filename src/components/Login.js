@@ -25,15 +25,10 @@ const Login = () => {
     window.google.accounts.id.prompt();
   };
 
-  const handleGoBack = () => {
-    window.history.back();
-  };
-
   return (
     <div>
       <h1>Login Page</h1>
       <button onClick={handleSignIn}>Sign in with Google</button>
-      <button onClick={handleGoBack}>Go Back</button>
       {/* Add other login elements as needed */}
     </div>
   );
